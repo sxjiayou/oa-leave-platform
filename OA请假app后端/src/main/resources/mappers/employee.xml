@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--接口查询技巧实现   1.namespace与包名一致-->
+<!--2.id 与方法名一致 3.参数和返回类型与接口方法对应-->
+<mapper namespace="top.hygyxx.oa.mapper.EmployeeDao">
+
+<!--查询领导-->
+    <select id="selectLeader" parameterType="top.hygyxx.oa.entity.Employee" resultType="top.hygyxx.oa.entity.Employee">
+        select * from adm_employee
+        where
+        <if test="emp.level&lt;7">
+            level = 7 and department_id = #{emp.departmentId}
+        </if>
+        <if test="emp.level==7">
+            level = 8
+        </if>
+        <if test="emp.level==8">
+            employee_id=#{emp.employeeId}
+        </if>
+    </select>
+</mapper>

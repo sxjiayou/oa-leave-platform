@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/inform/inform",
+    "pages/apply/apply",
+    "pages/examine/examine",
+    "pages/auth/login",
+    "pages/auth/register"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uView",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#07c060",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/inform/inform",
+        "iconPath": "static/icon/inform.png",
+        "selectedIconPath": "static/icon/inform1.png",
+        "text": "通知"
+      },
+      {
+        "pagePath": "pages/apply/apply",
+        "iconPath": "static/icon/apply.png",
+        "selectedIconPath": "static/icon/apply1.png",
+        "text": "申请"
+      },
+      {
+        "pagePath": "pages/examine/examine",
+        "iconPath": "static/icon/examine.png",
+        "selectedIconPath": "static/icon/examine1.png",
+        "text": "审批"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/icon/index.png",
+        "selectedIconPath": "static/icon/index1.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

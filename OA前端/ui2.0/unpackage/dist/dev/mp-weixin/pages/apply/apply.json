@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "申请",
+  "usingComponents": {
+    "u-form": "/uview-ui/components/u-form/u-form",
+    "u-form-item": "/uview-ui/components/u-form-item/u-form-item",
+    "u-radio-group": "/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/uview-ui/components/u-radio/u-radio",
+    "u-input": "/uview-ui/components/u-input/u-input",
+    "u-picker": "/uview-ui/components/u-picker/u-picker",
+    "u-checkbox": "/uview-ui/components/u-checkbox/u-checkbox",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "u-action-sheet": "/uview-ui/components/u-action-sheet/u-action-sheet",
+    "u-select": "/uview-ui/components/u-select/u-select",
+    "u-verification-code": "/uview-ui/components/u-verification-code/u-verification-code"
+  }
+}

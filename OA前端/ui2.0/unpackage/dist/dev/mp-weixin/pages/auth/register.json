@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "注册",
+  "usingComponents": {
+    "u-form-item": "/uview-ui/components/u-form-item/u-form-item"
+  }
+}

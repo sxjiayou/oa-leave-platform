@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--用户功能权限-->
+<mapper namespace="top.hygyxx.oa.mapper.RbacDao">
+    <select id="selectNodeByUserId" resultType="top.hygyxx.oa.entity.Node" parameterType="Long">
+        SELECT DiSTINCT n.*
+        FROM sys_role_node rn ,sys_role_user ru ,sys_node n
+        where rn.role_id=ru.role_id and n.node_id=rn.node_id and user_id=#{value}
+        order by n.node_code
+    </select>
+</mapper>

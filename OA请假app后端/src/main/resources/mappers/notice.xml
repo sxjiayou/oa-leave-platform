@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="top.hygyxx.oa.mapper.NoticeDao">
+<!--    插入 主键回添 useGeneratedKeys="true" keyProperty="formId" keyColumn="form_id"-->
+    <insert id="insert" parameterType="top.hygyxx.oa.entity.Notice"
+    useGeneratedKeys="true" keyProperty="noticeId" keyColumn="notice_id"
+    >
+        INSERT INTO   sys_notice  ( notice_id ,  receiver_id ,  content ,  create_time )
+        VALUES (#{noticeId}, #{receiverId }, #{content }, #{createTime})
+        </insert>
+
+    <select id="selectById" resultType="top.hygyxx.oa.entity.Notice" parameterType="Long">
+        select * from sys_notice where receiver_id=#{value} order by create_time desc
+    </select>
+
+</mapper>
